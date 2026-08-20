@@ -121,7 +121,7 @@
     "Wonder": 0
   },
   "customBackgrounds": [],
-  "backgroundNotes": "Genius 3: CALIPER experiences Enlightenment as branching state maps and possible future implementations of people, machines, and networks.\nResources 2: personal assets independent of Construct requisitions.\nLibrary 1: encrypted portable archive of cybernetics, predictive systems, information architecture, and Union technical doctrine.\nContacts 1: technical and Union-adjacent contacts outside the chronicle target city; no local relationship is assumed without Storyteller approval.\nEnhancement 2: Chronicle grant outside the normal seven Background dots and normal freebie economy. The Forge +4 bonus-freebie entry exists only to cancel the generator's normal four-freebie charge for Enhancement 2.",
+  "backgroundNotes": "Genius 3: Enlightenment appears as branching future-state maps for people, machines, and networks.\nResources 2: personal assets, not Construct requisitions.\nLibrary 1: portable encrypted archive of cybernetics, predictive systems, and Union technical doctrine.\nContacts 1: nonlocal technical and Union-adjacent contacts; no local relationships assumed without Storyteller approval.\nEnhancement 2: Chronicle grant. Forge's +4 bonus-freebie entry only offsets its normal charge for the free Enhancement.",
   "enhancementAllocations": {
     "Strength": 0,
     "Dexterity": 0,
@@ -140,30 +140,122 @@
   "resonanceSignature": "Recursive, predictive, machine-precise",
   "quintessenceBonus": 0,
   "merits": [
-    {"id": "eidetic-memory", "name": "Eidetic Memory", "points": 2},
-    {"id": "concentration", "name": "Concentration", "points": 1},
-    {"id": "mechanical-aptitude", "name": "Mechanical Aptitude", "points": 1},
-    {"id": "computer-aptitude", "name": "Computer Aptitude", "points": 1},
-    {"id": "lightning-calculator", "name": "Lightning Calculator", "points": 1},
-    {"id": "acute-sense", "name": "Acute Sense (Touch)", "points": 1}
+    {
+      "id": "eidetic-memory",
+      "name": "Eidetic Memory",
+      "points": 2
+    },
+    {
+      "id": "concentration",
+      "name": "Concentration",
+      "points": 1
+    },
+    {
+      "id": "mechanical-aptitude",
+      "name": "Mechanical Aptitude",
+      "points": 1
+    },
+    {
+      "id": "computer-aptitude",
+      "name": "Computer Aptitude",
+      "points": 1
+    },
+    {
+      "id": "lightning-calculator",
+      "name": "Lightning Calculator",
+      "points": 1
+    },
+    {
+      "id": "acute-sense",
+      "name": "Acute Sense (Touch)",
+      "points": 1
+    }
   ],
   "flaws": [
-    {"id": "obsession", "name": "Obsession: Posthuman Continuity", "points": 2},
-    {"id": "curiosity", "name": "Curiosity", "points": 2},
-    {"id": "sympathizer", "name": "Sympathizer", "points": 1},
-    {"id": "technobabbler", "name": "Technobabbler", "points": 1},
-    {"id": "special-responsibility", "name": "Special Responsibility: Amalgam Systems Integrity", "points": 1},
-    {"id": "faulty-enhancements", "name": "Faulty Enhancements", "points": 4}
+    {
+      "id": "obsession",
+      "name": "Obsession: Posthuman Continuity",
+      "points": 2
+    },
+    {
+      "id": "curiosity",
+      "name": "Curiosity",
+      "points": 2
+    },
+    {
+      "id": "sympathizer",
+      "name": "Sympathizer",
+      "points": 1
+    },
+    {
+      "id": "technobabbler",
+      "name": "Technobabbler",
+      "points": 1
+    },
+    {
+      "id": "special-responsibility",
+      "name": "Special Responsibility: Amalgam Systems Integrity",
+      "points": 1
+    },
+    {
+      "id": "faulty-enhancements",
+      "name": "Faulty Enhancements",
+      "points": 4
+    }
   ],
   "rotes": "PREDICTIVE STATE MODEL — Data 2 + Time 2. Proposed pool: Intelligence + Computer. CALIPER ingests live network and sensor data, models branching near-future states, and identifies the most probable next failure, movement, or decision point.\n\nDISTRIBUTED SENSORIUM — Data 3 + Time 1. Proposed pool: Perception + Computer. CALIPER treats reachable cameras, microphones, telemetry feeds, and machine sensors as extensions of his own situational awareness, correlating them into one coherent operational picture.\n\nPRIMAL POWER ROUTING PROTOCOL — Data 2 + Matter 1 + Prime 2. Proposed pool: Intelligence + Technology. CALIPER maps an Enlightened system's informational, physical, and Primal layers together, then routes available Primal Energy through a compatible Device, cybernetic subsystem, or technical interface to stabilize or energize the system.",
-  "equipment": "Encrypted hardened field computer and predictive-modeling suite\nSoftware-defined radio, network analyzer, and interface kit\nPrecision cybernetics/electronics fabrication toolkit\nPortable telemetry and hardware diagnostic sensors\nConcealable service sidearm and conventional protective equipment\nEncrypted local technical archive and spare interface components\nRugged communications, GPS, multitool, flashlight, and PPE\nNo Backup, Construct, Node, Requisitions, or Secret Weapons assumed for ongoing field access.",
-  "history": "Gabriel Navarro came to Iteration X through predictive computing and human-machine systems integration rather than medicine. Before recruitment, he designed distributed control architecture and adaptive interface systems. His Enlightenment occurred while debugging a predictive-control network that began returning correct future-state solutions that could not be derived from the information available to it. Gabriel stopped treating the anomaly as corrupted output and started asking what the system was actually perceiving.\n\nThe Albuquerque Construct gave that question a vocabulary. CALIPER became a specialist in cybernetic integration, networked cognition, and systems that extend a person through machines. He later volunteered for an Iteration X cognitive-augmentation stack built from incompatible generations of hardware because the isolated Construct lacked ideal components. The result works extraordinarily well until it does not; intermittent synchronization failures are the price of Faulty Enhancements. Gabriel considers the experiment a success, not a cautionary tale.\n\nHis long-term project is posthuman autonomy: technology that lets ordinary people deliberately choose how they sense, think, remember, communicate, and eventually embody themselves without surrendering personhood or agency to the Union.",
-  "notes": "CORE PRINCIPLE: A person should have the right to decide what form their existence takes.\n\nCALIPER is not the amalgam physician and does not specialize in biological modification. His domain is information, prediction, cybernetics, machine integration, and technical systems. Data is his practiced specialty; Time is his Iteration X Affinity and the way his Genius naturally perceives change; Matter is implementation and embodiment; Prime is the Enlightened substrate beneath the system.\n\nHe is fascinated by the continuity problem — how far a self can be extended, distributed, augmented, or reimplemented without ceasing to be that self — but he has not yet developed the Mind Sphere. That is a future research frontier, not a starting capability. Consent, autonomy, and continuity are non-negotiable.\n\nAdvancement priorities: deepen Data and Time as operational specialties, develop Matter for more radical artificial embodiment, raise Prime as Enlightened systems work demands, and eventually open Mind only when the chronicle pushes Gabriel from machine integration into direct questions of consciousness.",
+  "equipment": "Hardened encrypted field computer with predictive-modeling suite\nSoftware-defined radio, network analyzer, and interface kit\nPrecision cybernetics/electronics fabrication and telemetry tools\nConcealable service sidearm, protective equipment, comms, GPS, and multitool\nPortable technical archive and spare interface components",
+  "history": "Before recruitment, Gabriel Navarro designed predictive-control and human-machine interface systems. He Enlightened when a network began producing accurate future-state solutions impossible to derive from its inputs; instead of dismissing corrupted output, he asked what the system was perceiving.\n\nAt the Albuquerque Construct, CALIPER specialized in networked cognition and cybernetic integration. He volunteered for a cognitive-augmentation stack assembled from mismatched hardware during the Construct's isolation. Its synchronization failures are Faulty Enhancements; Gabriel still considers the experiment a success.\n\nHis project is posthuman autonomy: make voluntary augmentation safe and accessible enough that ordinary people can choose how they sense, think, communicate, and eventually embody themselves.",
+  "notes": "CORE PRINCIPLE: A person should have the right to decide what form their existence takes.\n\nCALIPER is a systems integrator, not the amalgam physician. His core is Data 3 (stored and printed by the current Forge under its canonical Correspondence field), Time 2, Matter 2, and Prime 2. Time is his Iteration X Affinity.\n\nHe studies the continuity problem - how far a self can be extended, distributed, or reimplemented without ceasing to be itself - but begins with no Mind Sphere. Consent, autonomy, and continuity are non-negotiable. Develop Data/Time first; deepen Matter/Prime as needed; open Mind later when consciousness itself becomes the problem.",
   "experience": 0,
   "xpPurchases": [
-    {"id": "xp-time-2", "category": "sphere", "key": "Time", "label": "Time", "from": 1, "to": 2, "cost": 7, "approval": "", "note": "Chronicle starting XP; Iteration X Affinity Sphere", "purchasedAt": "2026-08-19T20:40:00.000Z"},
-    {"id": "xp-matter-2", "category": "sphere", "key": "Matter", "label": "Matter", "from": 1, "to": 2, "cost": 8, "approval": "", "note": "Chronicle starting XP", "purchasedAt": "2026-08-19T20:40:00.000Z"},
-    {"id": "xp-prime-2", "category": "sphere", "key": "Prime", "label": "Prime", "from": 1, "to": 2, "cost": 8, "approval": "", "note": "Chronicle starting XP", "purchasedAt": "2026-08-19T20:40:00.000Z"},
-    {"id": "xp-awareness-2", "category": "ability", "key": "Awareness", "label": "Awareness", "from": 1, "to": 2, "cost": 2, "approval": "", "note": "Chronicle starting XP", "purchasedAt": "2026-08-19T20:40:00.000Z"}
+    {
+      "id": "xp-time-2",
+      "category": "sphere",
+      "key": "Time",
+      "label": "Time",
+      "from": 1,
+      "to": 2,
+      "cost": 7,
+      "approval": "",
+      "note": "Chronicle starting XP; Iteration X Affinity Sphere",
+      "purchasedAt": "2026-08-19T20:40:00.000Z"
+    },
+    {
+      "id": "xp-matter-2",
+      "category": "sphere",
+      "key": "Matter",
+      "label": "Matter",
+      "from": 1,
+      "to": 2,
+      "cost": 8,
+      "approval": "",
+      "note": "Chronicle starting XP",
+      "purchasedAt": "2026-08-19T20:40:00.000Z"
+    },
+    {
+      "id": "xp-prime-2",
+      "category": "sphere",
+      "key": "Prime",
+      "label": "Prime",
+      "from": 1,
+      "to": 2,
+      "cost": 8,
+      "approval": "",
+      "note": "Chronicle starting XP",
+      "purchasedAt": "2026-08-19T20:40:00.000Z"
+    },
+    {
+      "id": "xp-awareness-2",
+      "category": "ability",
+      "key": "Awareness",
+      "label": "Awareness",
+      "from": 1,
+      "to": 2,
+      "cost": 2,
+      "approval": "",
+      "note": "Chronicle starting XP",
+      "purchasedAt": "2026-08-19T20:40:00.000Z"
+    }
   ]
 }
