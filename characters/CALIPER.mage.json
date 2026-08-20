@@ -82,7 +82,8 @@
   "specializations": {
     "attribute:Stamina": "Sustained Operations",
     "attribute:Intelligence": "Systems Integration",
-    "ability:Technology": "Cybernetics"
+    "ability:Technology": "Cybernetics",
+    "attribute:Perception": "Signal Discrimination"
   },
   "spheres": {
     "Correspondence": 3,
@@ -140,68 +141,20 @@
   "resonanceSignature": "Recursive, predictive, machine-precise",
   "quintessenceBonus": 0,
   "merits": [
-    {
-      "id": "eidetic-memory",
-      "name": "Eidetic Memory",
-      "points": 2
-    },
-    {
-      "id": "concentration",
-      "name": "Concentration",
-      "points": 1
-    },
-    {
-      "id": "mechanical-aptitude",
-      "name": "Mechanical Aptitude",
-      "points": 1
-    },
-    {
-      "id": "computer-aptitude",
-      "name": "Computer Aptitude",
-      "points": 1
-    },
-    {
-      "id": "lightning-calculator",
-      "name": "Lightning Calculator",
-      "points": 1
-    },
-    {
-      "id": "acute-sense",
-      "name": "Acute Sense (Touch)",
-      "points": 1
-    }
+    {"id": "eidetic-memory", "name": "Eidetic Memory", "points": 2},
+    {"id": "concentration", "name": "Concentration", "points": 1},
+    {"id": "mechanical-aptitude", "name": "Mechanical Aptitude", "points": 1},
+    {"id": "computer-aptitude", "name": "Computer Aptitude", "points": 1},
+    {"id": "lightning-calculator", "name": "Lightning Calculator", "points": 1},
+    {"id": "acute-sense", "name": "Acute Sense (Touch)", "points": 1}
   ],
   "flaws": [
-    {
-      "id": "obsession",
-      "name": "Obsession: Posthuman Continuity",
-      "points": 2
-    },
-    {
-      "id": "curiosity",
-      "name": "Curiosity",
-      "points": 2
-    },
-    {
-      "id": "sympathizer",
-      "name": "Sympathizer",
-      "points": 1
-    },
-    {
-      "id": "technobabbler",
-      "name": "Technobabbler",
-      "points": 1
-    },
-    {
-      "id": "special-responsibility",
-      "name": "Special Responsibility: Amalgam Systems Integrity",
-      "points": 1
-    },
-    {
-      "id": "faulty-enhancements",
-      "name": "Faulty Enhancements",
-      "points": 4
-    }
+    {"id": "obsession", "name": "Obsession: Posthuman Continuity", "points": 2},
+    {"id": "curiosity", "name": "Curiosity", "points": 2},
+    {"id": "sympathizer", "name": "Sympathizer", "points": 1},
+    {"id": "technobabbler", "name": "Technobabbler", "points": 1},
+    {"id": "special-responsibility", "name": "Special Responsibility: Amalgam Systems Integrity", "points": 1},
+    {"id": "faulty-enhancements", "name": "Faulty Enhancements", "points": 4}
   ],
   "rotes": "PREDICTIVE STATE MODEL — Data 2 + Time 2. Proposed pool: Intelligence + Computer. CALIPER ingests live network and sensor data, models branching near-future states, and identifies the most probable next failure, movement, or decision point.\n\nDISTRIBUTED SENSORIUM — Data 3 + Time 1. Proposed pool: Perception + Computer. CALIPER treats reachable cameras, microphones, telemetry feeds, and machine sensors as extensions of his own situational awareness, correlating them into one coherent operational picture.\n\nPRIMAL POWER ROUTING PROTOCOL — Data 2 + Matter 1 + Prime 2. Proposed pool: Intelligence + Technology. CALIPER maps an Enlightened system's informational, physical, and Primal layers together, then routes available Primal Energy through a compatible Device, cybernetic subsystem, or technical interface to stabilize or energize the system.",
   "equipment": "Hardened encrypted field computer with predictive-modeling suite\nSoftware-defined radio, network analyzer, and interface kit\nPrecision cybernetics/electronics fabrication and telemetry tools\nConcealable service sidearm, protective equipment, comms, GPS, and multitool\nPortable technical archive and spare interface components",
@@ -209,53 +162,9 @@
   "notes": "CORE PRINCIPLE: A person should have the right to decide what form their existence takes.\n\nCALIPER is a systems integrator, not the amalgam physician. His core is Data 3 (stored and printed by the current Forge under its canonical Correspondence field), Time 2, Matter 2, and Prime 2. Time is his Iteration X Affinity.\n\nHe studies the continuity problem - how far a self can be extended, distributed, or reimplemented without ceasing to be itself - but begins with no Mind Sphere. Consent, autonomy, and continuity are non-negotiable. Develop Data/Time first; deepen Matter/Prime as needed; open Mind later when consciousness itself becomes the problem.",
   "experience": 0,
   "xpPurchases": [
-    {
-      "id": "xp-time-2",
-      "category": "sphere",
-      "key": "Time",
-      "label": "Time",
-      "from": 1,
-      "to": 2,
-      "cost": 7,
-      "approval": "",
-      "note": "Chronicle starting XP; Iteration X Affinity Sphere",
-      "purchasedAt": "2026-08-19T20:40:00.000Z"
-    },
-    {
-      "id": "xp-matter-2",
-      "category": "sphere",
-      "key": "Matter",
-      "label": "Matter",
-      "from": 1,
-      "to": 2,
-      "cost": 8,
-      "approval": "",
-      "note": "Chronicle starting XP",
-      "purchasedAt": "2026-08-19T20:40:00.000Z"
-    },
-    {
-      "id": "xp-prime-2",
-      "category": "sphere",
-      "key": "Prime",
-      "label": "Prime",
-      "from": 1,
-      "to": 2,
-      "cost": 8,
-      "approval": "",
-      "note": "Chronicle starting XP",
-      "purchasedAt": "2026-08-19T20:40:00.000Z"
-    },
-    {
-      "id": "xp-awareness-2",
-      "category": "ability",
-      "key": "Awareness",
-      "label": "Awareness",
-      "from": 1,
-      "to": 2,
-      "cost": 2,
-      "approval": "",
-      "note": "Chronicle starting XP",
-      "purchasedAt": "2026-08-19T20:40:00.000Z"
-    }
+    {"id": "xp-time-2", "category": "sphere", "key": "Time", "label": "Time", "from": 1, "to": 2, "cost": 7, "approval": "", "note": "Chronicle starting XP; Iteration X Affinity Sphere", "purchasedAt": "2026-08-19T20:40:00.000Z"},
+    {"id": "xp-matter-2", "category": "sphere", "key": "Matter", "label": "Matter", "from": 1, "to": 2, "cost": 8, "approval": "", "note": "Chronicle starting XP", "purchasedAt": "2026-08-19T20:40:00.000Z"},
+    {"id": "xp-prime-2", "category": "sphere", "key": "Prime", "label": "Prime", "from": 1, "to": 2, "cost": 8, "approval": "", "note": "Chronicle starting XP", "purchasedAt": "2026-08-19T20:40:00.000Z"},
+    {"id": "xp-awareness-2", "category": "ability", "key": "Awareness", "label": "Awareness", "from": 1, "to": 2, "cost": 2, "approval": "", "note": "Chronicle starting XP", "purchasedAt": "2026-08-19T20:40:00.000Z"}
   ]
 }
