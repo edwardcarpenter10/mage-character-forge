@@ -1,0 +1,1 @@
+Package the current standalone Mage Character Forge for the 2026-08-21 itch.io release sync.
