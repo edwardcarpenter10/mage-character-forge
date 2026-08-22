@@ -25,5 +25,144 @@ Error generating stack: `+e.message+`
   </head>
   <body>
     <div id="root"></div>
+    <script>
+      (() => {
+        const root = document.getElementById("root");
+        const exactCoreNames = new Map([
+          ["Arete / Enlightenment", "Arete"],
+          ["Enlightenment", "Arete"],
+          ["Enlightened Science", "Magick"],
+          ["Genius", "Avatar"],
+          ["Primal Energy", "Quintessence"],
+          ["Paradox Effect", "Paradox"],
+          ["Procedures", "Rotes"],
+          ["Amalgam", "Cabal"],
+          ["Data", "Correspondence"],
+          ["Dimensional Science", "Spirit"],
+          ["Primal Utility", "Prime"],
+          ["Device", "Wonder"],
+          ["Devices", "Wonders"],
+          ["Convention", "Organization"],
+          ["Methodology", "Faction"],
+          ["Enlightened society", "Awakened society"],
+          ["The enlightened record", "The awakened record"],
+          ["Who became Enlightened?", "Who awakened?"],
+        ]);
+        const exactTechnocraticNames = new Map([
+          ["Arete", "Enlightenment"],
+          ["Magick", "Enlightened Science"],
+          ["Avatar", "Genius"],
+          ["Quintessence", "Primal Energy"],
+          ["Paradox", "Paradox Effect"],
+          ["Rotes", "Procedures"],
+          ["Cabal", "Amalgam"],
+          ["Correspondence", "Data"],
+          ["Spirit", "Dimensional Science"],
+          ["Wonder", "Device"],
+          ["Wonders", "Devices"],
+          ["Organization", "Convention"],
+          ["Faction", "Methodology"],
+          ["Awakened society", "Enlightened society"],
+          ["The awakened record", "The enlightened record"],
+          ["Who awakened?", "Who became Enlightened?"],
+        ]);
+        const phraseNames = [
+          ["Rotes and signature workings", "Procedures and signature adjustments"],
+          ["Rotes & workings", "Procedures & Adjustments"],
+          ["Equipment and wonders", "Equipment and Devices"],
+          ["Equipment & wonders", "Equipment & Devices"],
+          ["Avatar Essence", "Genius Essence"],
+          ["Quintessence", "Primal Energy"],
+          ["Paradox", "Paradox Effect"],
+          ["Wonders", "Devices"],
+          ["Wonder", "Device"],
+          ["Avatar", "Genius"],
+          ["Rotes", "Procedures"],
+          ["Chantries", "Constructs"],
+          ["Chantry", "Construct"],
+          ["Cabal", "Amalgam"],
+        ];
+        const aliases = [
+          ["Procedures and signature workings", "Rotes and signature workings"],
+          ["Primal Utility", "Prime"],
+        ];
+        const escapePattern = (value) => value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+        const replaceTerm = (text, from, to) =>
+          text.replace(new RegExp(`\\b${escapePattern(from)}\\b`, "g"), to);
+        const translate = (value, technocratic) => {
+          if (!value.trim()) return value;
+          const leading = value.match(/^\s*/)?.[0] ?? "";
+          const trailing = value.match(/\s*$/)?.[0] ?? "";
+          let text = value.slice(leading.length, value.length - trailing.length);
+          text = exactCoreNames.get(text) ?? text;
+          for (const [alias, core] of aliases) text = replaceTerm(text, alias, core);
+          for (const [core, tech] of [...phraseNames].sort((a, b) => b[1].length - a[1].length)) {
+            text = replaceTerm(text, tech, core);
+          }
+          if (technocratic) {
+            text = exactTechnocraticNames.get(text) ?? text;
+            for (const [core, tech] of [...phraseNames].sort((a, b) => b[0].length - a[0].length)) {
+              text = replaceTerm(text, core, tech);
+            }
+          }
+          return `${leading}${text}${trailing}`;
+        };
+        const containsUserText = (node) => {
+          const parent = node.parentElement;
+          if (!parent) return true;
+          if (parent.closest("script, style, textarea")) return true;
+          if (parent.matches(".sheet-title h1, .sheet-title div > span, .sheet-identity b")) return true;
+          if (parent.matches(".sheet-prose p") && !parent.closest(".quiet-print")) return true;
+          if (parent.matches(".quiet-print p") && !parent.textContent.trim().startsWith("Onset.")) return true;
+          return false;
+        };
+        const isTechnocratic = () => {
+          const society = [...root.querySelectorAll("select")].find((select) =>
+            [...select.options].some((option) => option.value === "Technocratic Union")
+          );
+          if (society) return society.value === "Technocratic Union";
+          const printedSociety = [...root.querySelectorAll(".sheet-identity div")].find(
+            (field) => field.querySelector("span")?.textContent.trim() === "Society"
+          );
+          return printedSociety?.querySelector("b")?.textContent.trim() === "Technocratic Union";
+        };
+        const applyTerminology = () => {
+          const technocratic = isTechnocratic();
+          document.documentElement.dataset.mageTerminology = technocratic ? "technocratic" : "core";
+          const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+          for (let node = walker.nextNode(); node; node = walker.nextNode()) {
+            if (containsUserText(node)) continue;
+            const next = translate(node.nodeValue, technocratic);
+            if (next !== node.nodeValue) node.nodeValue = next;
+          }
+          for (const element of root.querySelectorAll("[aria-label], [placeholder], [title]")) {
+            for (const attribute of ["aria-label", "placeholder", "title"]) {
+              if (!element.hasAttribute(attribute)) continue;
+              const current = element.getAttribute(attribute);
+              const next = translate(current, technocratic);
+              if (next !== current) element.setAttribute(attribute, next);
+            }
+          }
+        };
+        let queued = false;
+        const scheduleTerminology = () => {
+          if (queued) return;
+          queued = true;
+          queueMicrotask(() => {
+            queued = false;
+            applyTerminology();
+          });
+        };
+        new MutationObserver(scheduleTerminology).observe(root, {
+          attributes: true,
+          attributeFilter: ["aria-label", "placeholder", "title"],
+          characterData: true,
+          childList: true,
+          subtree: true,
+        });
+        document.addEventListener("change", scheduleTerminology, true);
+        scheduleTerminology();
+      })();
+    </script>
   </body>
 </html>
