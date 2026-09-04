@@ -6,7 +6,13 @@ window.FORGE_CONFIG = {
   game: "Changeling: The Dreaming 20th Anniversary Edition",
   shortGame: "a chronicle between Banality and wonder",
   description: "A free, local-first C20 character creator for changelings, Kinain, enchanted mortals, and mortal NPCs, with advancement, JSON saves, and print-ready records.",
-  theme: { accent: "#4f3c79", accent2: "#b78945", bg: "#121018", bgDeep: "#07060b" },
+  logo: { kind: "changeling" },
+  theme: { accent: "#4f3c79", accent2: "#bd8e49", bg: "#121018", bgDeep: "#07060b", panel: "#1c1727", panel2: "#292137", paper: "#ece4ee", paper2: "#d0c4dc", ink: "#20182a", muted: "#aba0bc", line: "#5d4c70", paperMuted: "#5e5069", paperLine: "#7f6e8e" },
+  terminologySets: [
+    { id: "seelie", label: "Seelie Court", description: "Kithain, Kith, Seeming, Court, House and fealty, Legacies, Arts, and Realms.", terms: { fields: { kith: "Kith", seeming: "Seeming", court: "Seelie Allegiance", house: "House / Fealty", seelieLegacy: "Seelie Legacy", unseelieLegacy: "Unseelie Legacy" }, groups: { arts: "Arts", realms: "Realms", backgrounds: "Backgrounds" }, ui: { advantagesHeading: "Arts, Realms, and fae Advantages", advantagesPrintTitle: "Arts, Realms, and Advantages" } } },
+    { id: "unseelie", label: "Unseelie Court", description: "Kithain, Kith, Seeming, Court, compact, Legacies, Arts, and Realms.", terms: { fields: { kith: "Kith", seeming: "Seeming", court: "Unseelie Allegiance", house: "House / Compact", seelieLegacy: "Seelie Legacy", unseelieLegacy: "Unseelie Legacy" }, groups: { arts: "Arts", realms: "Realms", backgrounds: "Backgrounds" }, ui: { advantagesHeading: "Arts, Realms, and fae Advantages", advantagesPrintTitle: "Arts, Realms, and Advantages" } } },
+    { id: "neutral", label: "Shadow Court & neutral", description: "Fae, lineage, life stage, allegiance, faction, bright and dark Legacies, powers, and domains.", terms: { fields: { kith: "Fae Lineage", seeming: "Life Stage", court: "Allegiance", house: "Faction / Freehold", seelieLegacy: "Bright Legacy", unseelieLegacy: "Dark Legacy" }, groups: { arts: "Fae Powers", realms: "Domains", backgrounds: "Ties and Backgrounds" }, specials: { glamour: "Fae Energy", banality: "Mundane Pressure" }, ui: { advantagesHeading: "Powers, domains, and fae ties", advantagesPrintTitle: "Powers, Domains, and Advantages" } } }
+  ],
   identityFields: [
     { key: "name", label: "Name", placeholder: "Character name" },
     { key: "player", label: "Player", placeholder: "Player or Storyteller" },

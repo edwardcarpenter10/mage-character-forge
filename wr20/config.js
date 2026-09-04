@@ -6,7 +6,13 @@ window.FORGE_CONFIG = {
   game: "Wraith: The Oblivion 20th Anniversary Edition",
   shortGame: "a chronicle of unfinished lives",
   description: "A free, local-first Wr20 character creator for wraiths, mediums and haunted mortals, and mortal NPCs, with Shadow records, advancement, JSON saves, and printable sheets.",
-  theme: { accent: "#315b66", accent2: "#a69a72", bg: "#101416", bgDeep: "#060809" },
+  logo: { kind: "wraith" },
+  theme: { accent: "#315b66", accent2: "#aea27d", bg: "#101416", bgDeep: "#060809", panel: "#161e22", panel2: "#222a2d", paper: "#e1e2dc", paper2: "#bfc9c9", ink: "#172126", muted: "#9aaab0", line: "#4b626a", paperMuted: "#4e6065", paperLine: "#70868a" },
+  terminologySets: [
+    { id: "hierarchy", label: "Hierarchy", description: "Wraith, faction, Legion, Circle, Arcanoi, Passions, Fetters, and Shadow.", terms: { fields: { faction: "Allegiance", legion: "Legion / Department", circle: "Circle", death: "Death", regret: "Regret", shadowArchetype: "Shadow Archetype" }, groups: { arcanoi: "Arcanoi", passions: "Passions", fetters: "Fetters", darkPassions: "Dark Passions", thorns: "Thorns" }, ui: { advantagesHeading: "Arcanoi, ties, and the Shadow", advantagesPrintTitle: "Arcanoi and Advantages" } } },
+    { id: "outsider", label: "Guild, Renegade & Heretic", description: "Wraith, movement, Guild or faction, Circle or band, Arcanoi, and Shadow.", terms: { fields: { faction: "Movement", legion: "Guild / Faction", circle: "Circle / Band", death: "Death", regret: "Unfinished Business", shadowArchetype: "Shadow Archetype" }, groups: { arcanoi: "Arcanoi", passions: "Passions", fetters: "Fetters", darkPassions: "Dark Passions", thorns: "Thorns" }, ui: { advantagesHeading: "Arcanoi, ties, and the Shadow", advantagesPrintTitle: "Arcanoi and Advantages" } } },
+    { id: "neutral", label: "Afterlife-neutral", description: "Restless dead, allegiance, affiliation, group, powers, drives, anchors, and dark self.", terms: { fields: { faction: "Allegiance", legion: "Affiliation", circle: "Group", death: "Death", regret: "Unfinished Business", shadowArchetype: "Dark Self Archetype" }, groups: { arcanoi: "Powers", passions: "Drives", fetters: "Anchors", darkPassions: "Dark Drives", thorns: "Dark Gifts" }, specials: { pathos: "Spiritual Energy", corpus: "Spiritual Integrity", angst: "Dark Self Rating" }, ui: { advantagesHeading: "Powers, ties, and the dark self", advantagesPrintTitle: "Powers and Advantages" } } }
+  ],
   identityFields: [
     { key: "name", label: "Name", placeholder: "Name in life or death" },
     { key: "player", label: "Player", placeholder: "Player or Storyteller" },

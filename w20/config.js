@@ -6,7 +6,13 @@ window.FORGE_CONFIG = {
   game: "Werewolf: The Apocalypse 20th Anniversary Edition",
   shortGame: "a chronicle beneath a dying moon",
   description: "A free, local-first W20 character creator for Garou, Kinfolk, wolf Kinfolk, and mortal NPCs, with advancement, JSON saves, and print-ready records.",
-  theme: { accent: "#6f2b1d", accent2: "#c69548", bg: "#111511", bgDeep: "#070907" },
+  logo: { kind: "werewolf" },
+  theme: { accent: "#6f2b1d", accent2: "#c89b4e", bg: "#111511", bgDeep: "#070907", panel: "#182019", panel2: "#25281f", paper: "#e8e1cf", paper2: "#cac4a7", ink: "#171d16", muted: "#a2ad9d", line: "#53624f", paperMuted: "#4f5a47", paperLine: "#75806b" },
+  terminologySets: [
+    { id: "nation", label: "Garou Nation", description: "Garou, Breed, Auspice, Tribe, pack, sept, Gifts, and Renown.", terms: { fields: { breed: "Breed", auspice: "Auspice", tribe: "Tribe", pack: "Pack", sept: "Sept", deedName: "Deed Name" }, groups: { gifts: "Gifts", backgrounds: "Backgrounds" }, ui: { advantagesHeading: "Advantages, Gifts, and Renown" } } },
+    { id: "spiral", label: "Hive & fallen tribe", description: "Garou, Breed, Auspice, tribe, pack, hive, Gifts, and Renown.", terms: { fields: { breed: "Breed", auspice: "Auspice", tribe: "Tribe", pack: "Pack", sept: "Hive", deedName: "Deed Name" }, groups: { gifts: "Gifts", backgrounds: "Backgrounds" }, ui: { advantagesHeading: "Advantages, Gifts, and Renown" } } },
+    { id: "neutral", label: "Changing Breed & neutral", description: "Shifter, origin, role, people, group, territory, powers, and reputation.", terms: { fields: { breed: "Origin / Breed", auspice: "Role", tribe: "People / Lineage", pack: "Group", sept: "Territory", deedName: "Earned Name" }, groups: { gifts: "Powers / Gifts", backgrounds: "Ties and Backgrounds" }, specials: { glory: "Reputation: Glory", honor: "Reputation: Honor", wisdom: "Reputation: Wisdom" }, ui: { advantagesHeading: "Advantages, powers, and reputation" } } }
+  ],
   identityFields: [
     { key: "name", label: "Name", placeholder: "Character name" },
     { key: "player", label: "Player", placeholder: "Player or Storyteller" },

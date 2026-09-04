@@ -2,7 +2,9 @@
 
 A free, local-first character builder for **Mage: The Ascension 20th Anniversary Edition**.
 
-Templates: Awakened Mage, Sorcerer/Extraordinary Citizen, Custos/Acolyte, and mortal NPC. `advanced.html` preserves the original specialist Mage workspace for Resonance, Quiet, Enhancements, Technocratic terminology, and detailed rotes.
+Templates: Awakened Mage, Sorcerer/Extraordinary Citizen, Custos/Acolyte, and mortal NPC. The guided forge includes Mystic, Technocratic, and chronicle-neutral terminology sets. `advanced.html` opens the original specialist Mage workspace for Resonance, Quiet, Enhancements, and detailed rotes inside the shared Character Forge branding.
+
+This forge shares an engraved-sigil design system, book-page workspace, controls, and print treatment with the Vampire, Werewolf, Wraith, and Changeling forges while retaining a Mage-specific compass-star seal and palette.
 
 Open `index.html` in a browser. No account, server, analytics, or network connection is required.
 

@@ -6,7 +6,13 @@ window.FORGE_CONFIG = {
   game: "Mage: The Ascension 20th Anniversary Edition",
   shortGame: "a chronicle of belief and consequence",
   description: "A free, local-first M20 character creator for mages, sorcerers and Extraordinary Citizens, Custodes and acolytes, and mortal NPCs.",
-  theme: { accent: "#856a2b", accent2: "#b99a50", bg: "#12100f", bgDeep: "#080706" },
+  logo: { kind: "mage" },
+  theme: { accent: "#856a2b", accent2: "#c2a45a", bg: "#12100f", bgDeep: "#080706", panel: "#1c1915", panel2: "#29231a", paper: "#eee6d1", paper2: "#d6c8a9", ink: "#1e1a13", muted: "#b0a690", line: "#695b45", paperMuted: "#5d523d", paperLine: "#847354" },
+  terminologySets: [
+    { id: "mystic", label: "Traditions & Disparates", description: "Mage, magick, Spheres, Arete, Avatar, and cabal.", terms: { fields: { society: "Awakened Society", affiliation: "Tradition / Craft", faction: "Faction", cabal: "Cabal", affinitySphere: "Affinity Sphere", practice: "Practice", instruments: "Instruments" }, groups: { spheres: "Spheres" }, specials: { arete: "Arete", quintessence: "Quintessence", paradox: "Paradox" }, ui: { advantagesHeading: "Advantages and magickal traits", advantagesPrintTitle: "Magick and Advantages" } } },
+    { id: "technocracy", label: "Technocratic Union", description: "Enlightened Science, Enlightenment, Convention, Methodology, and amalgam.", terms: { fields: { society: "Union Allegiance", affiliation: "Convention", faction: "Methodology", cabal: "Amalgam", affinitySphere: "Primary Enlightened Science", paradigm: "Scientific Paradigm", practice: "Procedure", instruments: "Apparatus" }, groups: { spheres: "Enlightened Sciences" }, specials: { arete: "Enlightenment", quintessence: "Primal Energy", paradox: "Paradox" }, ui: { advantagesHeading: "Advantages and Enlightened traits", advantagesPrintTitle: "Enlightened Science and Advantages" } } },
+    { id: "neutral", label: "Chronicle-neutral", description: "Mage, power traits, organization, subgroup, and working group.", terms: { fields: { society: "Awakened Allegiance", affiliation: "Organization", faction: "Subgroup", cabal: "Working Group", affinitySphere: "Affinity Power", practice: "Method", instruments: "Tools" }, groups: { spheres: "Power Traits" }, specials: { arete: "Enlightenment Rating", quintessence: "Mystic Energy", paradox: "Backlash" }, ui: { advantagesHeading: "Advantages and supernatural traits", advantagesPrintTitle: "Powers and Advantages" } } }
+  ],
   advancedTool: { href: "advanced.html", label: "Advanced Mage workspace" },
   identityFields: [
     { key: "name", label: "Name", placeholder: "Character name" },
