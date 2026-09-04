@@ -1,9 +1,9 @@
-# Mage Character Forge
+# Mage 20th Character Forge
 
-A self-contained Mage: The Ascension 20th Anniversary Edition character creator and print-ready sheet.
+A free, local-first character builder for **Mage: The Ascension 20th Anniversary Edition**.
 
-The Forge supports standard, experienced, and Storyteller-freeform characters across the Traditions, Disparate Alliance, Technocratic Union, independents, Marauders, Nephandi, and custom Awakened societies. It includes all 33 core M20 Backgrounds, Technocratic terminology and variants, custom Abilities and Backgrounds, free-form Merits and Flaws, JSON import/export, and a print-to-PDF character record.
+Templates: Awakened Mage, Sorcerer/Extraordinary Citizen, Custos/Acolyte, and mortal NPC. `advanced.html` preserves the original specialist Mage workspace for Resonance, Quiet, Enhancements, Technocratic terminology, and detailed rotes.
 
-Standard and experienced builds use a rules-aware M20 creation ledger. Enhancement, Sanctum/Laboratory, and Totem consume two Background or freebie points per dot; Requisitions and Secret Weapons are restricted to Technocratic characters; faction affinity-Sphere choices, the Ahl-i-Batin Entropy prohibition, Focus requirements, starting pools, freebie costs, Arete/Sphere limits, specializations, Flaw contribution limits, and starting Quintessence are validated. Every built-in Background also carries concise usage guidance and flags details that need Storyteller definition. Storyteller Freeform keeps these rules visible as guidance while allowing intentional chronicle and NPC exceptions.
+Open `index.html` in a browser. No account, server, analytics, or network connection is required.
 
-The project is an unofficial fan-made character aid. It contains trait names and user-entered character data, not setting prose or rulebook text.
+Unofficial Dark Pack fan material. Portions of the materials are the copyrights and trademarks of Paradox Interactive AB, and are used with permission. All rights reserved. For more information please visit worldofdarkness.com.
