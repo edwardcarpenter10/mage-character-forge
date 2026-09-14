@@ -1,0 +1,39 @@
+name: Validate Character Forges
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'app.js'
+      - 'config.js'
+      - 'w20/app.js'
+      - 'w20/config.js'
+      - 'wr20/app.js'
+      - 'wr20/config.js'
+      - 'c20/app.js'
+      - 'c20/config.js'
+      - '.github/workflows/validate-forges.yml'
+  pull_request:
+    paths:
+      - 'app.js'
+      - 'config.js'
+      - 'w20/app.js'
+      - 'w20/config.js'
+      - 'wr20/app.js'
+      - 'wr20/config.js'
+      - 'c20/app.js'
+      - 'c20/config.js'
+jobs:
+  syntax:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check JavaScript syntax
+        run: |
+          node --check app.js
+          node --check config.js
+          node --check w20/app.js
+          node --check w20/config.js
+          node --check wr20/app.js
+          node --check wr20/config.js
+          node --check c20/app.js
+          node --check c20/config.js
