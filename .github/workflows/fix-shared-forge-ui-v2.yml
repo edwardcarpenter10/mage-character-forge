@@ -1,0 +1,24 @@
+name: Fix shared Character Forge UI
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/fix-shared-forge-ui-v2.yml'
+      - '.github/scripts/fix_shared_forge_ui.py'
+permissions:
+  contents: write
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Apply shared UI repairs
+        run: python .github/scripts/fix_shared_forge_ui.py
+      - name: Commit repairs
+        run: |
+          git config user.name "Lantern & Lever Forge Fix"
+          git config user.email "actions@users.noreply.github.com"
+          git add app.js w20/app.js wr20/app.js c20/app.js
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Fix Forge scroll jumps and Flaw ledger refresh"
+          git push
